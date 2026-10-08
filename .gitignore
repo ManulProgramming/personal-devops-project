@@ -1,0 +1,4 @@
+# Logs, backups and secrets must never be committed
+*.log
+backup/
+.env
