@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    image: boyarkin-dmitriy-devops
+    container_name: boyarkin-dmitriy-container
+    environment:
+      STUDENT_NAME: "${STUDENT_NAME:-Dmitriy}"
+      STUDENT_SURNAME: "${STUDENT_SURNAME:-Boyarkin}"
+      STUDENT_GROUP: "${STUDENT_GROUP:-IT2-2312}"
+      STUDENT_ID: "${STUDENT_ID:-37752}"
+    restart: "no"
